@@ -1,7 +1,7 @@
 # Keystone Assembler Engine (www.keystone-engine.org)
 # By Nguyen Anh Quynh, 2016
 
-cmake_minimum_required(VERSION 2.8.7)
+cmake_minimum_required(VERSION 3.5.0)
 project(keystone)
 
 set(KEYSTONE_VERSION_MAJOR 0)
@@ -25,7 +25,8 @@ if (POLICY CMP0051)
   # stripped everywhere that access the SOURCES property, so we just
   # defer to the OLD behavior of not including generator expressions
   # in the output for now.
-  cmake_policy(SET CMP0051 OLD)
+  # Disabled for compatibility with cmake 4.0.0
+  # cmake_policy(SET CMP0051 OLD)
 endif()
 
 if (POLICY CMP0063)

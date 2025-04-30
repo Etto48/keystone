@@ -1,6 +1,6 @@
 name: PyPI 📦 Distribution
 
-on: [push]
+on: workflow_dispatch
 
 jobs:
   build:
