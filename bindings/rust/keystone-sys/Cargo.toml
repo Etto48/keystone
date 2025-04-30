@@ -1,5 +1,5 @@
 [package]
-name = "keystone-sys"
+name = "hexpatch-keystone-sys"
 version = "0.9.2"
 authors = [
   "Remco Verhoef <remco.verhoef@dutchcoders.io>",

@@ -1,0 +1,31 @@
+name: Continuous Deployment
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  publish-stable:
+    name: Create a stable release
+    runs-on: ubuntu-latest
+    if: ${{ startsWith(github.event.ref, 'refs/tags/v') }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Publish keystone-sys
+        uses: actions-rs/cargo@v1
+        with:
+          command: publish
+          args: --token ${{ secrets.CARGO_TOKEN }} --manifest-path bindings/rust/keystone-sys/Cargo.toml
+
+      - name: Publish keystone
+        uses: actions-rs/cargo@v1
+        with:
+          command: publish
+          args: --token ${{ secrets.CARGO_TOKEN }} --manifest-path bindings/rust/Cargo.toml

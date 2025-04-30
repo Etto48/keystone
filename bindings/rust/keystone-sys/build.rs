@@ -3,23 +3,9 @@ extern crate cmake;
 #[cfg(feature = "use_system_keystone")]
 extern crate pkg_config;
 
-#[cfg(all(not(windows), feature = "build_keystone_cmake"))]
-use std::os::unix::fs::symlink;
-#[cfg(all(windows, feature = "build_keystone_cmake"))]
-use std::os::windows::fs::symlink_dir as symlink;
-
-#[cfg(feature = "build_keystone_cmake")]
-use std::path::Path;
 
 #[cfg(feature = "build_keystone_cmake")]
 fn build_with_cmake() {
-    if !Path::new("keystone").exists() {
-        // This only happens when using the crate via a `git` reference as the
-        // published version already embeds keystone's source.
-        let pwd = std::env::current_dir().unwrap();
-        let keystone_dir = pwd.ancestors().skip(3).next().unwrap();
-        symlink(keystone_dir, "keystone").expect("failed to symlink keystone");
-    }
 
     let dest = cmake::Config::new("keystone")
         .define("CMAKE_INSTALL_LIBDIR", "lib")
