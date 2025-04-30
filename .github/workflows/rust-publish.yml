@@ -1,4 +1,4 @@
-name: Continuous Deployment
+name: Crates.io 📦 Distribution
 
 on:
   push:
