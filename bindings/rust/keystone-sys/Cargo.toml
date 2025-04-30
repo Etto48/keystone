@@ -9,6 +9,7 @@ description = "Rust bindings for the keystone assembler"
 repository = "https://github.com/keystone-engine/keystone"
 documentation = "https://docs.rs/keystone/"
 license = "GPL-2.0"
+edition = "2021"
 build = "build.rs"
 
 [build-dependencies]
