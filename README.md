@@ -2,6 +2,7 @@ Keystone Engine
 ==============
 
 This is a fork of the original [Keystone Engine](https://github.com/keystone-engine/keystone) made to support newer versions of cmake and focused on the Rust bindings.
+For the actual binding check out [hexpatch-keystone](https://github.com/Etto48/hexpatch-keystone).
 
 Keystone is a lightweight multi-platform, multi-architecture assembler framework.
 It offers some unparalleled features:
