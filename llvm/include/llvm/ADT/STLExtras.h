@@ -34,7 +34,7 @@ namespace llvm_ks {
 //===----------------------------------------------------------------------===//
 
 template<class Ty>
-struct identity : public std::unary_function<Ty, Ty> {
+struct identity {
   Ty &operator()(Ty &self) const {
     return self;
   }
@@ -44,14 +44,14 @@ struct identity : public std::unary_function<Ty, Ty> {
 };
 
 template<class Ty>
-struct less_ptr : public std::binary_function<Ty, Ty, bool> {
+struct less_ptr {
   bool operator()(const Ty* left, const Ty* right) const {
     return *left < *right;
   }
 };
 
 template<class Ty>
-struct greater_ptr : public std::binary_function<Ty, Ty, bool> {
+struct greater_ptr {
   bool operator()(const Ty* left, const Ty* right) const {
     return *right < *left;
   }
