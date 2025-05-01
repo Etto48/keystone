@@ -2330,7 +2330,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair AArch64DwarfFlavour0Dwarf2L[] = {
   { 94U, AArch64::B30 },
   { 95U, AArch64::B31 },
 };
-extern const unsigned AArch64DwarfFlavour0Dwarf2LSize = array_lengthof(AArch64DwarfFlavour0Dwarf2L);
+extern const unsigned AArch64DwarfFlavour0Dwarf2LSize = std::size(AArch64DwarfFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair AArch64EHFlavour0Dwarf2L[] = {
   { 0U, AArch64::W0 },
@@ -2398,7 +2398,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair AArch64EHFlavour0Dwarf2L[] = {
   { 94U, AArch64::B30 },
   { 95U, AArch64::B31 },
 };
-extern const unsigned AArch64EHFlavour0Dwarf2LSize = array_lengthof(AArch64EHFlavour0Dwarf2L);
+extern const unsigned AArch64EHFlavour0Dwarf2LSize = std::size(AArch64EHFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair AArch64DwarfFlavour0L2Dwarf[] = {
   { AArch64::FP, 29U },
@@ -2628,7 +2628,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair AArch64DwarfFlavour0L2Dwarf[] = {
   { AArch64::X27, 27U },
   { AArch64::X28, 28U },
 };
-extern const unsigned AArch64DwarfFlavour0L2DwarfSize = array_lengthof(AArch64DwarfFlavour0L2Dwarf);
+extern const unsigned AArch64DwarfFlavour0L2DwarfSize = std::size(AArch64DwarfFlavour0L2Dwarf);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair AArch64EHFlavour0L2Dwarf[] = {
   { AArch64::FP, 29U },
@@ -2858,7 +2858,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair AArch64EHFlavour0L2Dwarf[] = {
   { AArch64::X27, 27U },
   { AArch64::X28, 28U },
 };
-extern const unsigned AArch64EHFlavour0L2DwarfSize = array_lengthof(AArch64EHFlavour0L2Dwarf);
+extern const unsigned AArch64EHFlavour0L2DwarfSize = std::size(AArch64EHFlavour0L2Dwarf);
 
 extern const uint16_t AArch64RegEncodingTable[] = {
   0,

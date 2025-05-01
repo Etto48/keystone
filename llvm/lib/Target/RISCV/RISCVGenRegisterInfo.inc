@@ -700,7 +700,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair RISCVDwarfFlavour0Dwarf2L[] = {
   { 62U, RISCV::F30_64 },
   { 63U, RISCV::F31_64 },
 };
-extern const unsigned RISCVDwarfFlavour0Dwarf2LSize = array_lengthof(RISCVDwarfFlavour0Dwarf2L);
+extern const unsigned RISCVDwarfFlavour0Dwarf2LSize = std::size(RISCVDwarfFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair RISCVEHFlavour0Dwarf2L[] = {
   { 0U, RISCV::X0 },
@@ -768,7 +768,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair RISCVEHFlavour0Dwarf2L[] = {
   { 62U, RISCV::F30_64 },
   { 63U, RISCV::F31_64 },
 };
-extern const unsigned RISCVEHFlavour0Dwarf2LSize = array_lengthof(RISCVEHFlavour0Dwarf2L);
+extern const unsigned RISCVEHFlavour0Dwarf2LSize = std::size(RISCVEHFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair RISCVDwarfFlavour0L2Dwarf[] = {
   { RISCV::X0, 0U },
@@ -868,7 +868,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair RISCVDwarfFlavour0L2Dwarf[] = {
   { RISCV::F31_32, 63U },
   { RISCV::F31_64, 63U },
 };
-extern const unsigned RISCVDwarfFlavour0L2DwarfSize = array_lengthof(RISCVDwarfFlavour0L2Dwarf);
+extern const unsigned RISCVDwarfFlavour0L2DwarfSize = std::size(RISCVDwarfFlavour0L2Dwarf);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair RISCVEHFlavour0L2Dwarf[] = {
   { RISCV::X0, 0U },
@@ -968,7 +968,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair RISCVEHFlavour0L2Dwarf[] = {
   { RISCV::F31_32, 63U },
   { RISCV::F31_64, 63U },
 };
-extern const unsigned RISCVEHFlavour0L2DwarfSize = array_lengthof(RISCVEHFlavour0L2Dwarf);
+extern const unsigned RISCVEHFlavour0L2DwarfSize = std::size(RISCVEHFlavour0L2Dwarf);
 
 extern const uint16_t RISCVRegEncodingTable[] = {
   0,

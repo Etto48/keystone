@@ -4,6 +4,9 @@
 cmake_minimum_required(VERSION 3.5.0)
 project(keystone)
 
+# Set c++ standard to C++17
+set(CMAKE_CXX_STANDARD 17)
+
 set(KEYSTONE_VERSION_MAJOR 0)
 set(KEYSTONE_VERSION_MINOR 9)
 

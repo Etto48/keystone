@@ -2743,7 +2743,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair ARMDwarfFlavour0Dwarf2L[] = {
   { 286U, ARM::D30 },
   { 287U, ARM::D31 },
 };
-extern const unsigned ARMDwarfFlavour0Dwarf2LSize = array_lengthof(ARMDwarfFlavour0Dwarf2L);
+extern const unsigned ARMDwarfFlavour0Dwarf2LSize = std::size(ARMDwarfFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair ARMEHFlavour0Dwarf2L[] = {
   { 0U, ARM::R0 },
@@ -2795,7 +2795,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair ARMEHFlavour0Dwarf2L[] = {
   { 286U, ARM::D30 },
   { 287U, ARM::D31 },
 };
-extern const unsigned ARMEHFlavour0Dwarf2LSize = array_lengthof(ARMEHFlavour0Dwarf2L);
+extern const unsigned ARMEHFlavour0Dwarf2LSize = std::size(ARMEHFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair ARMDwarfFlavour0L2Dwarf[] = {
   { ARM::LR, 14U },
@@ -2847,7 +2847,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair ARMDwarfFlavour0L2Dwarf[] = {
   { ARM::R11, 11U },
   { ARM::R12, 12U },
 };
-extern const unsigned ARMDwarfFlavour0L2DwarfSize = array_lengthof(ARMDwarfFlavour0L2Dwarf);
+extern const unsigned ARMDwarfFlavour0L2DwarfSize = std::size(ARMDwarfFlavour0L2Dwarf);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair ARMEHFlavour0L2Dwarf[] = {
   { ARM::LR, 14U },
@@ -2899,7 +2899,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair ARMEHFlavour0L2Dwarf[] = {
   { ARM::R11, 11U },
   { ARM::R12, 12U },
 };
-extern const unsigned ARMEHFlavour0L2DwarfSize = array_lengthof(ARMEHFlavour0L2Dwarf);
+extern const unsigned ARMEHFlavour0L2DwarfSize = std::size(ARMEHFlavour0L2Dwarf);
 
 extern const uint16_t ARMRegEncodingTable[] = {
   0,

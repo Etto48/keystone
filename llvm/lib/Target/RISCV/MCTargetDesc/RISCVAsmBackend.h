@@ -122,7 +122,7 @@ public:
       { "fixup_riscv_relax",         0,      0,  0 },
       { "fixup_riscv_align",         0,      0,  0 }
     };
-    static_assert((array_lengthof(Infos)) == RISCV::NumTargetFixupKinds,
+    static_assert((std::size(Infos)) == RISCV::NumTargetFixupKinds,
                   "Not all fixup kinds added to Infos array");
 
     if (Kind < FirstTargetFixupKind)

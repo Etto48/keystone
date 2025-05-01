@@ -978,7 +978,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair HexagonDwarfFlavour0Dwarf2L[] = {
   { 133U, Hexagon::Q2 },
   { 134U, Hexagon::Q3 },
 };
-extern const unsigned HexagonDwarfFlavour0Dwarf2LSize = array_lengthof(HexagonDwarfFlavour0Dwarf2L);
+extern const unsigned HexagonDwarfFlavour0Dwarf2LSize = std::size(HexagonDwarfFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair HexagonEHFlavour0Dwarf2L[] = {
   { 0U, Hexagon::R0 },
@@ -1086,7 +1086,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair HexagonEHFlavour0Dwarf2L[] = {
   { 133U, Hexagon::Q2 },
   { 134U, Hexagon::Q3 },
 };
-extern const unsigned HexagonEHFlavour0Dwarf2LSize = array_lengthof(HexagonEHFlavour0Dwarf2L);
+extern const unsigned HexagonEHFlavour0Dwarf2LSize = std::size(HexagonEHFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair HexagonDwarfFlavour0L2Dwarf[] = {
   { Hexagon::CS, 78U },
@@ -1219,7 +1219,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair HexagonDwarfFlavour0L2Dwarf[] = {
   { Hexagon::C11_10, 76U },
   { Hexagon::P3_0, 71U },
 };
-extern const unsigned HexagonDwarfFlavour0L2DwarfSize = array_lengthof(HexagonDwarfFlavour0L2Dwarf);
+extern const unsigned HexagonDwarfFlavour0L2DwarfSize = std::size(HexagonDwarfFlavour0L2Dwarf);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair HexagonEHFlavour0L2Dwarf[] = {
   { Hexagon::CS, 78U },
@@ -1352,7 +1352,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair HexagonEHFlavour0L2Dwarf[] = {
   { Hexagon::C11_10, 76U },
   { Hexagon::P3_0, 71U },
 };
-extern const unsigned HexagonEHFlavour0L2DwarfSize = array_lengthof(HexagonEHFlavour0L2Dwarf);
+extern const unsigned HexagonEHFlavour0L2DwarfSize = std::size(HexagonEHFlavour0L2Dwarf);
 
 extern const uint16_t HexagonRegEncodingTable[] = {
   0,

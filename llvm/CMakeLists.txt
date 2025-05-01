@@ -4,6 +4,9 @@ cmake_minimum_required(VERSION 3.5.0)
 
 set(LLVM_INSTALL_TOOLCHAIN_ONLY ON)
 
+# Set c++ standard to C++17
+set(CMAKE_CXX_STANDARD 17)
+
 if (NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
   message(STATUS "No build type selected, default to Debug")
   set(CMAKE_BUILD_TYPE "Debug")

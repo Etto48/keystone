@@ -2151,7 +2151,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair X86DwarfFlavour0Dwarf2L[] = {
   { 124U, X86::K6 },
   { 125U, X86::K7 },
 };
-extern const unsigned X86DwarfFlavour0Dwarf2LSize = array_lengthof(X86DwarfFlavour0Dwarf2L);
+extern const unsigned X86DwarfFlavour0Dwarf2LSize = std::size(X86DwarfFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair X86DwarfFlavour1Dwarf2L[] = {
   { 0U, X86::EAX },
@@ -2188,7 +2188,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair X86DwarfFlavour1Dwarf2L[] = {
   { 35U, X86::MM6 },
   { 36U, X86::MM7 },
 };
-extern const unsigned X86DwarfFlavour1Dwarf2LSize = array_lengthof(X86DwarfFlavour1Dwarf2L);
+extern const unsigned X86DwarfFlavour1Dwarf2LSize = std::size(X86DwarfFlavour1Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair X86DwarfFlavour2Dwarf2L[] = {
   { 0U, X86::EAX },
@@ -2225,7 +2225,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair X86DwarfFlavour2Dwarf2L[] = {
   { 35U, X86::MM6 },
   { 36U, X86::MM7 },
 };
-extern const unsigned X86DwarfFlavour2Dwarf2LSize = array_lengthof(X86DwarfFlavour2Dwarf2L);
+extern const unsigned X86DwarfFlavour2Dwarf2LSize = std::size(X86DwarfFlavour2Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair X86EHFlavour0Dwarf2L[] = {
   { 0U, X86::RAX },
@@ -2302,7 +2302,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair X86EHFlavour0Dwarf2L[] = {
   { 124U, X86::K6 },
   { 125U, X86::K7 },
 };
-extern const unsigned X86EHFlavour0Dwarf2LSize = array_lengthof(X86EHFlavour0Dwarf2L);
+extern const unsigned X86EHFlavour0Dwarf2LSize = std::size(X86EHFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair X86EHFlavour1Dwarf2L[] = {
   { 0U, X86::EAX },
@@ -2339,7 +2339,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair X86EHFlavour1Dwarf2L[] = {
   { 35U, X86::MM6 },
   { 36U, X86::MM7 },
 };
-extern const unsigned X86EHFlavour1Dwarf2LSize = array_lengthof(X86EHFlavour1Dwarf2L);
+extern const unsigned X86EHFlavour1Dwarf2LSize = std::size(X86EHFlavour1Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair X86EHFlavour2Dwarf2L[] = {
   { 0U, X86::EAX },
@@ -2376,7 +2376,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair X86EHFlavour2Dwarf2L[] = {
   { 35U, X86::MM6 },
   { 36U, X86::MM7 },
 };
-extern const unsigned X86EHFlavour2Dwarf2LSize = array_lengthof(X86EHFlavour2Dwarf2L);
+extern const unsigned X86EHFlavour2Dwarf2LSize = std::size(X86EHFlavour2Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair X86DwarfFlavour0L2Dwarf[] = {
   { X86::EAX, -2U },
@@ -2526,7 +2526,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair X86DwarfFlavour0L2Dwarf[] = {
   { X86::ZMM30, 74U },
   { X86::ZMM31, 75U },
 };
-extern const unsigned X86DwarfFlavour0L2DwarfSize = array_lengthof(X86DwarfFlavour0L2Dwarf);
+extern const unsigned X86DwarfFlavour0L2DwarfSize = std::size(X86DwarfFlavour0L2Dwarf);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair X86DwarfFlavour1L2Dwarf[] = {
   { X86::EAX, 0U },
@@ -2676,7 +2676,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair X86DwarfFlavour1L2Dwarf[] = {
   { X86::ZMM30, -2U },
   { X86::ZMM31, -2U },
 };
-extern const unsigned X86DwarfFlavour1L2DwarfSize = array_lengthof(X86DwarfFlavour1L2Dwarf);
+extern const unsigned X86DwarfFlavour1L2DwarfSize = std::size(X86DwarfFlavour1L2Dwarf);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair X86DwarfFlavour2L2Dwarf[] = {
   { X86::EAX, 0U },
@@ -2826,7 +2826,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair X86DwarfFlavour2L2Dwarf[] = {
   { X86::ZMM30, -2U },
   { X86::ZMM31, -2U },
 };
-extern const unsigned X86DwarfFlavour2L2DwarfSize = array_lengthof(X86DwarfFlavour2L2Dwarf);
+extern const unsigned X86DwarfFlavour2L2DwarfSize = std::size(X86DwarfFlavour2L2Dwarf);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair X86EHFlavour0L2Dwarf[] = {
   { X86::EAX, -2U },
@@ -2976,7 +2976,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair X86EHFlavour0L2Dwarf[] = {
   { X86::ZMM30, 74U },
   { X86::ZMM31, 75U },
 };
-extern const unsigned X86EHFlavour0L2DwarfSize = array_lengthof(X86EHFlavour0L2Dwarf);
+extern const unsigned X86EHFlavour0L2DwarfSize = std::size(X86EHFlavour0L2Dwarf);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair X86EHFlavour1L2Dwarf[] = {
   { X86::EAX, 0U },
@@ -3126,7 +3126,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair X86EHFlavour1L2Dwarf[] = {
   { X86::ZMM30, -2U },
   { X86::ZMM31, -2U },
 };
-extern const unsigned X86EHFlavour1L2DwarfSize = array_lengthof(X86EHFlavour1L2Dwarf);
+extern const unsigned X86EHFlavour1L2DwarfSize = std::size(X86EHFlavour1L2Dwarf);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair X86EHFlavour2L2Dwarf[] = {
   { X86::EAX, 0U },
@@ -3276,7 +3276,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair X86EHFlavour2L2Dwarf[] = {
   { X86::ZMM30, -2U },
   { X86::ZMM31, -2U },
 };
-extern const unsigned X86EHFlavour2L2DwarfSize = array_lengthof(X86EHFlavour2L2Dwarf);
+extern const unsigned X86EHFlavour2L2DwarfSize = std::size(X86EHFlavour2L2Dwarf);
 
 extern const uint16_t X86RegEncodingTable[] = {
   0,

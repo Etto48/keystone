@@ -1098,7 +1098,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair SPDwarfFlavour0Dwarf2L[] = {
   { 86U, SP::D14 },
   { 87U, SP::D15 },
 };
-extern const unsigned SPDwarfFlavour0Dwarf2LSize = array_lengthof(SPDwarfFlavour0Dwarf2L);
+extern const unsigned SPDwarfFlavour0Dwarf2LSize = std::size(SPDwarfFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair SPEHFlavour0Dwarf2L[] = {
   { 0U, SP::G0 },
@@ -1183,7 +1183,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair SPEHFlavour0Dwarf2L[] = {
   { 86U, SP::D14 },
   { 87U, SP::D15 },
 };
-extern const unsigned SPEHFlavour0Dwarf2LSize = array_lengthof(SPEHFlavour0Dwarf2L);
+extern const unsigned SPEHFlavour0Dwarf2LSize = std::size(SPEHFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair SPDwarfFlavour0L2Dwarf[] = {
   { SP::Y, 64U },
@@ -1268,7 +1268,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair SPDwarfFlavour0L2Dwarf[] = {
   { SP::O6, 14U },
   { SP::O7, 15U },
 };
-extern const unsigned SPDwarfFlavour0L2DwarfSize = array_lengthof(SPDwarfFlavour0L2Dwarf);
+extern const unsigned SPDwarfFlavour0L2DwarfSize = std::size(SPDwarfFlavour0L2Dwarf);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair SPEHFlavour0L2Dwarf[] = {
   { SP::Y, 64U },
@@ -1353,7 +1353,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair SPEHFlavour0L2Dwarf[] = {
   { SP::O6, 14U },
   { SP::O7, 15U },
 };
-extern const unsigned SPEHFlavour0L2DwarfSize = array_lengthof(SPEHFlavour0L2Dwarf);
+extern const unsigned SPEHFlavour0L2DwarfSize = std::size(SPEHFlavour0L2Dwarf);
 
 extern const uint16_t SparcRegEncodingTable[] = {
   0,

@@ -2613,7 +2613,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair MipsDwarfFlavour0Dwarf2L[] = {
   { 180U, Mips::HI3 },
   { 181U, Mips::LO3 },
 };
-extern const unsigned MipsDwarfFlavour0Dwarf2LSize = array_lengthof(MipsDwarfFlavour0Dwarf2L);
+extern const unsigned MipsDwarfFlavour0Dwarf2LSize = std::size(MipsDwarfFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair MipsEHFlavour0Dwarf2L[] = {
   { 0U, Mips::ZERO_64 },
@@ -2689,7 +2689,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair MipsEHFlavour0Dwarf2L[] = {
   { 180U, Mips::HI3 },
   { 181U, Mips::LO3 },
 };
-extern const unsigned MipsEHFlavour0Dwarf2LSize = array_lengthof(MipsEHFlavour0Dwarf2L);
+extern const unsigned MipsEHFlavour0Dwarf2LSize = std::size(MipsEHFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair MipsDwarfFlavour0L2Dwarf[] = {
   { Mips::AT, 1U },
@@ -2893,7 +2893,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair MipsDwarfFlavour0L2Dwarf[] = {
   { Mips::V0_64, 2U },
   { Mips::V1_64, 3U },
 };
-extern const unsigned MipsDwarfFlavour0L2DwarfSize = array_lengthof(MipsDwarfFlavour0L2Dwarf);
+extern const unsigned MipsDwarfFlavour0L2DwarfSize = std::size(MipsDwarfFlavour0L2Dwarf);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair MipsEHFlavour0L2Dwarf[] = {
   { Mips::AT, 1U },
@@ -3097,7 +3097,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair MipsEHFlavour0L2Dwarf[] = {
   { Mips::V0_64, 2U },
   { Mips::V1_64, 3U },
 };
-extern const unsigned MipsEHFlavour0L2DwarfSize = array_lengthof(MipsEHFlavour0L2Dwarf);
+extern const unsigned MipsEHFlavour0L2DwarfSize = std::size(MipsEHFlavour0L2Dwarf);
 
 extern const uint16_t MipsRegEncodingTable[] = {
   0,

@@ -963,7 +963,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair SystemZDwarfFlavour0Dwarf2L[] = {
   { 82U, SystemZ::F29D },
   { 83U, SystemZ::F31D },
 };
-extern const unsigned SystemZDwarfFlavour0Dwarf2LSize = array_lengthof(SystemZDwarfFlavour0Dwarf2L);
+extern const unsigned SystemZDwarfFlavour0Dwarf2LSize = std::size(SystemZDwarfFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair SystemZEHFlavour0Dwarf2L[] = {
   { 0U, SystemZ::R0D },
@@ -1015,7 +1015,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair SystemZEHFlavour0Dwarf2L[] = {
   { 82U, SystemZ::F29D },
   { 83U, SystemZ::F31D },
 };
-extern const unsigned SystemZEHFlavour0Dwarf2LSize = array_lengthof(SystemZEHFlavour0Dwarf2L);
+extern const unsigned SystemZEHFlavour0Dwarf2LSize = std::size(SystemZEHFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair SystemZDwarfFlavour0L2Dwarf[] = {
   { SystemZ::V0, 16U },
@@ -1099,7 +1099,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair SystemZDwarfFlavour0L2Dwarf[] = {
   { SystemZ::R14D, 14U },
   { SystemZ::R15D, 15U },
 };
-extern const unsigned SystemZDwarfFlavour0L2DwarfSize = array_lengthof(SystemZDwarfFlavour0L2Dwarf);
+extern const unsigned SystemZDwarfFlavour0L2DwarfSize = std::size(SystemZDwarfFlavour0L2Dwarf);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair SystemZEHFlavour0L2Dwarf[] = {
   { SystemZ::V0, 16U },
@@ -1183,7 +1183,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair SystemZEHFlavour0L2Dwarf[] = {
   { SystemZ::R14D, 14U },
   { SystemZ::R15D, 15U },
 };
-extern const unsigned SystemZEHFlavour0L2DwarfSize = array_lengthof(SystemZEHFlavour0L2Dwarf);
+extern const unsigned SystemZEHFlavour0L2DwarfSize = std::size(SystemZEHFlavour0L2Dwarf);
 
 extern const uint16_t SystemZRegEncodingTable[] = {
   0,

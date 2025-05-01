@@ -464,12 +464,12 @@ raw_ostream &raw_ostream::indent(unsigned NumSpaces) {
                                "                ";
 
   // Usually the indentation is small, handle it with a fastpath.
-  if (NumSpaces < array_lengthof(Spaces))
+  if (NumSpaces < std::size(Spaces))
     return write(Spaces, NumSpaces);
 
   while (NumSpaces) {
     unsigned NumToWrite = std::min(NumSpaces,
-                                   (unsigned)array_lengthof(Spaces)-1);
+                                   (unsigned)std::size(Spaces)-1);
     write(Spaces, NumToWrite);
     NumSpaces -= NumToWrite;
   }

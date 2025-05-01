@@ -1596,7 +1596,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair PPCDwarfFlavour0Dwarf2L[] = {
   { 108U, PPC::V31 },
   { 109U, PPC::VRSAVE },
 };
-extern const unsigned PPCDwarfFlavour0Dwarf2LSize = array_lengthof(PPCDwarfFlavour0Dwarf2L);
+extern const unsigned PPCDwarfFlavour0Dwarf2LSize = std::size(PPCDwarfFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair PPCDwarfFlavour1Dwarf2L[] = {
   { 0U, PPC::R0 },
@@ -1706,7 +1706,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair PPCDwarfFlavour1Dwarf2L[] = {
   { 107U, PPC::V30 },
   { 108U, PPC::V31 },
 };
-extern const unsigned PPCDwarfFlavour1Dwarf2LSize = array_lengthof(PPCDwarfFlavour1Dwarf2L);
+extern const unsigned PPCDwarfFlavour1Dwarf2LSize = std::size(PPCDwarfFlavour1Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair PPCEHFlavour0Dwarf2L[] = {
   { 0U, PPC::X0 },
@@ -1818,7 +1818,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair PPCEHFlavour0Dwarf2L[] = {
   { 108U, PPC::V31 },
   { 109U, PPC::VRSAVE },
 };
-extern const unsigned PPCEHFlavour0Dwarf2LSize = array_lengthof(PPCEHFlavour0Dwarf2L);
+extern const unsigned PPCEHFlavour0Dwarf2LSize = std::size(PPCEHFlavour0Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair PPCEHFlavour1Dwarf2L[] = {
   { 0U, PPC::R0 },
@@ -1928,7 +1928,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair PPCEHFlavour1Dwarf2L[] = {
   { 107U, PPC::V30 },
   { 108U, PPC::V31 },
 };
-extern const unsigned PPCEHFlavour1Dwarf2LSize = array_lengthof(PPCEHFlavour1Dwarf2L);
+extern const unsigned PPCEHFlavour1Dwarf2LSize = std::size(PPCEHFlavour1Dwarf2L);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair PPCDwarfFlavour0L2Dwarf[] = {
   { PPC::CARRY, 76U },
@@ -2172,7 +2172,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair PPCDwarfFlavour0L2Dwarf[] = {
   { PPC::X31, 31U },
   { PPC::ZERO8, 0U },
 };
-extern const unsigned PPCDwarfFlavour0L2DwarfSize = array_lengthof(PPCDwarfFlavour0L2Dwarf);
+extern const unsigned PPCDwarfFlavour0L2DwarfSize = std::size(PPCDwarfFlavour0L2Dwarf);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair PPCDwarfFlavour1L2Dwarf[] = {
   { PPC::CTR, 66U },
@@ -2414,7 +2414,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair PPCDwarfFlavour1L2Dwarf[] = {
   { PPC::X31, -2U },
   { PPC::ZERO8, -2U },
 };
-extern const unsigned PPCDwarfFlavour1L2DwarfSize = array_lengthof(PPCDwarfFlavour1L2Dwarf);
+extern const unsigned PPCDwarfFlavour1L2DwarfSize = std::size(PPCDwarfFlavour1L2Dwarf);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair PPCEHFlavour0L2Dwarf[] = {
   { PPC::CARRY, 76U },
@@ -2658,7 +2658,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair PPCEHFlavour0L2Dwarf[] = {
   { PPC::X31, 31U },
   { PPC::ZERO8, 0U },
 };
-extern const unsigned PPCEHFlavour0L2DwarfSize = array_lengthof(PPCEHFlavour0L2Dwarf);
+extern const unsigned PPCEHFlavour0L2DwarfSize = std::size(PPCEHFlavour0L2Dwarf);
 
 extern const MCRegisterInfo::DwarfLLVMRegPair PPCEHFlavour1L2Dwarf[] = {
   { PPC::CTR, 66U },
@@ -2900,7 +2900,7 @@ extern const MCRegisterInfo::DwarfLLVMRegPair PPCEHFlavour1L2Dwarf[] = {
   { PPC::X31, -2U },
   { PPC::ZERO8, -2U },
 };
-extern const unsigned PPCEHFlavour1L2DwarfSize = array_lengthof(PPCEHFlavour1L2Dwarf);
+extern const unsigned PPCEHFlavour1L2DwarfSize = std::size(PPCEHFlavour1L2Dwarf);
 
 extern const uint16_t PPCRegEncodingTable[] = {
   0,

@@ -268,7 +268,7 @@ const AArch64NamedImmMapper::Mapping AArch64SysReg::MRSMapper::MRSMappings[] = {
 
 AArch64SysReg::MRSMapper::MRSMapper() {
     InstMappings = &MRSMappings[0];
-    NumInstMappings = llvm_ks::array_lengthof(MRSMappings);
+    NumInstMappings = std::size(MRSMappings);
 }
 
 const AArch64NamedImmMapper::Mapping AArch64SysReg::MSRMapper::MSRMappings[] = {
@@ -291,7 +291,7 @@ const AArch64NamedImmMapper::Mapping AArch64SysReg::MSRMapper::MSRMappings[] = {
 
 AArch64SysReg::MSRMapper::MSRMapper() {
     InstMappings = &MSRMappings[0];
-    NumInstMappings = llvm_ks::array_lengthof(MSRMappings);
+    NumInstMappings = std::size(MSRMappings);
 }
 
 
@@ -839,7 +839,7 @@ AArch64SysReg::SysRegMapper::fromString(StringRef Name,
   std::string NameLower = Name.lower();
 
   // First search the registers shared by all
-  for (unsigned i = 0; i < array_lengthof(SysRegMappings); ++i) {
+  for (unsigned i = 0; i < std::size(SysRegMappings); ++i) {
     if (SysRegMappings[i].isNameEqual(NameLower, FeatureBits)) {
       Valid = true;
       return SysRegMappings[i].Value;
@@ -881,7 +881,7 @@ std::string
 AArch64SysReg::SysRegMapper::toString(uint32_t Bits,
                                       const FeatureBitset& FeatureBits) const {
   // First search the registers shared by all
-  for (unsigned i = 0; i < array_lengthof(SysRegMappings); ++i) {
+  for (unsigned i = 0; i < std::size(SysRegMappings); ++i) {
     if (SysRegMappings[i].isValueEqual(Bits, FeatureBits)) {
       return SysRegMappings[i].Name;
     }

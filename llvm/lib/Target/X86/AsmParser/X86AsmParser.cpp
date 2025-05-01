@@ -3013,7 +3013,7 @@ bool X86AsmParser::MatchAndEmitATTInstruction(SMLoc IDLoc, unsigned &Opcode,
   uint64_t ErrorInfoMissingFeature = 0; // Init suppresses compiler warnings.
   unsigned Match[4];
 
-  for (unsigned I = 0, E = array_lengthof(Match); I != E; ++I) {
+  for (unsigned I = 0, E = std::size(Match); I != E; ++I) {
     Tmp.back() = Suffixes[I];
     Match[I] = MatchInstructionImpl(Operands, Inst, ErrorInfoIgnore,
                                   MatchingInlineAsm, isParsingIntelSyntax());
@@ -3049,7 +3049,7 @@ bool X86AsmParser::MatchAndEmitATTInstruction(SMLoc IDLoc, unsigned &Opcode,
 #if 0
     char MatchChars[4];
     unsigned NumMatches = 0;
-    for (unsigned I = 0, E = array_lengthof(Match); I != E; ++I)
+    for (unsigned I = 0, E = std::size(Match); I != E; ++I)
       if (Match[I] == Match_Success)
         MatchChars[NumMatches++] = Suffixes[I];
 
