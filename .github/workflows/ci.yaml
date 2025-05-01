@@ -33,6 +33,8 @@ jobs:
           run: mkdir -p build
         - name: Go to build directory
           run: cd build
+        - name: Debug ls
+          run: ls ../
         - name: Build Linux
           run: ../make-lib.sh
           if: matrix.os == 'ubuntu-latest' 
