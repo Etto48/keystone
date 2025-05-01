@@ -29,12 +29,16 @@ jobs:
     steps:
         - name: Checkout
           uses: actions/checkout@v4
+        - name: Debug pwd
+          run: pwd
+        - name: Debug ls
+          run: ls -la
+        - name: Go into project directory
+          run: cd keystone
         - name: Create build directory
           run: mkdir -p build
         - name: Go to build directory
           run: cd build
-        - name: Debug ls
-          run: ls ../
         - name: Build Linux
           run: ../make-lib.sh
           if: matrix.os == 'ubuntu-latest' 
