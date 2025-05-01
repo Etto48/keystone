@@ -33,15 +33,12 @@ jobs:
           run: mkdir -p build
         - name: Go to build directory
           run: cd build
-        - name: Run build script
-          run: |
-            if [[ "$RUNNER_OS" == "Linux" ]]; then
-              ../make-lib.sh
-            elif [[ "$RUNNER_OS" == "Windows" ]]; then
-              ..\nmake-lib.bat
-            elif [[ "$RUNNER_OS" == "macOS" ]]; then
-              ../make-lib.sh
-            else
-                echo "Unsupported OS: $RUNNER_OS"
-                exit 1
-            fi
+        - name: Build Linux
+          run: ../make-lib.sh
+          if: matrix.os == 'ubuntu-latest' 
+        - name: Build Windows
+          run: ..\nmake-lib.bat
+          if: matrix.os == 'windows-latest'
+        - name: Build MacOS
+          run: ../make-lib.sh
+          if: matrix.os == 'macos-latest'
