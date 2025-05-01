@@ -1,7 +1,7 @@
 # Keystone Assembler Engine (www.keystone-engine.org)
 # By Nguyen Anh Quynh, 2016
 
-cmake_minimum_required(VERSION 3.5.0)
+cmake_minimum_required(VERSION 3.10.0)
 project(keystone)
 
 # Set c++ standard to C++17
