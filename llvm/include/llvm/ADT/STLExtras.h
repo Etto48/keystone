@@ -26,6 +26,7 @@
 #include <iterator>
 #include <memory>
 #include <utility> // for std::pair
+#include <cstdint>
 
 namespace llvm_ks {
 

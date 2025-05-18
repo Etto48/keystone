@@ -17,6 +17,7 @@
 #include "llvm/Support/Compiler.h"
 #include "llvm/Support/DataTypes.h"
 #include "llvm/Support/Host.h"
+#include <cstdint>
 
 namespace llvm_ks {
   namespace MachO {

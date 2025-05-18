@@ -14,6 +14,7 @@
 #include "Unix.h"
 #include "llvm/Support/DataTypes.h"
 #include "llvm/Support/ErrorHandling.h"
+#include <cstdint>
 
 #ifdef HAVE_SYS_MMAN_H
 #include <sys/mman.h>

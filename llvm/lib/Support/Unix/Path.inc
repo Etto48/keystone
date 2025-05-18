@@ -19,6 +19,7 @@
 #include "Unix.h"
 #include <limits.h>
 #include <stdio.h>
+#include <cstdint>
 #if HAVE_SYS_STAT_H
 #include <sys/stat.h>
 #endif

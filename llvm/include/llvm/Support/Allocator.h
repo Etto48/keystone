@@ -30,6 +30,7 @@
 #include <cassert>
 #include <cstddef>
 #include <cstdlib>
+#include <cstdint>
 
 namespace llvm_ks {
 

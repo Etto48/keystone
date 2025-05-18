@@ -19,6 +19,7 @@
 #include "llvm/Support/COFF.h"
 #include "llvm/Support/Endian.h"
 #include "llvm/Support/ErrorOr.h"
+#include <cstdint>
 
 namespace llvm_ks {
 template <typename T> class ArrayRef;

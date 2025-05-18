@@ -20,6 +20,7 @@
 #include "llvm/ADT/Triple.h"
 #include "llvm/Object/ObjectFile.h"
 #include "llvm/Support/MachO.h"
+#include <cstdint>
 
 namespace llvm_ks {
 namespace object {

@@ -31,6 +31,7 @@
 #include <cctype>
 #include <limits>
 #include <utility>
+#include <cstdint>
 
 namespace llvm_ks {
 namespace object {

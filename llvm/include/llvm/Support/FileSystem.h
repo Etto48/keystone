@@ -39,6 +39,7 @@
 #include <system_error>
 #include <tuple>
 #include <vector>
+#include <cstdint>
 
 #ifdef HAVE_SYS_STAT_H
 #include <sys/stat.h>

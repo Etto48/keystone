@@ -21,6 +21,7 @@
 #include "llvm/ADT/iterator.h"
 #include "llvm/Support/Allocator.h"
 #include "llvm/Support/DataTypes.h"
+#include <cstdint>
 
 namespace llvm_ks {
 /// This folding set used for two purposes:

@@ -16,6 +16,7 @@
 #define LLVM_SUPPORT_COMPILER_H
 
 #include "llvm/Config/llvm-config.h"
+#include <cstdint>
 
 #ifndef __has_feature
 # define __has_feature(x) 0
