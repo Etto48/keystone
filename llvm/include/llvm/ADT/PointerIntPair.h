@@ -18,6 +18,7 @@
 #include "llvm/Support/PointerLikeTypeTraits.h"
 #include <cassert>
 #include <limits>
+#include <cstdint>
 
 namespace llvm_ks {
 

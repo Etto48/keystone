@@ -17,6 +17,7 @@
 
 #include "llvm/Support/AlignOf.h"
 #include "llvm/Support/DataTypes.h"
+#include <cstdint>
 
 namespace llvm_ks {
 

@@ -55,6 +55,7 @@
 #include <iterator>
 #include <string>
 #include <utility>
+#include <cstdint>
 
 namespace llvm_ks {
 

@@ -18,6 +18,7 @@
 #include "llvm/ADT/DenseMapInfo.h"
 #include "llvm/ADT/PointerIntPair.h"
 #include "llvm/Support/Compiler.h"
+#include <cstdint>
 
 namespace llvm_ks {
 

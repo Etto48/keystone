@@ -25,6 +25,7 @@
 #include <cerrno>
 #include <sys/stat.h>
 #include <system_error>
+#include <cstdint>
 
 // <fcntl.h> may provide O_BINARY.
 #if defined(HAVE_FCNTL_H)

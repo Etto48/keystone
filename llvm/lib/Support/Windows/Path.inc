@@ -22,6 +22,7 @@
 #include <io.h>
 #include <sys/stat.h>
 #include <sys/types.h>
+#include <cstdint>
 
 // These two headers must be included last, and make sure shlobj is required
 // after Windows.h to make sure it picks up our definition of _WIN32_WINNT

@@ -16,6 +16,7 @@
 
 #include "llvm/Object/Binary.h"
 #include "llvm/Support/Format.h"
+#include <cstdint>
 
 namespace llvm_ks {
 namespace object {
